@@ -1,5 +1,6 @@
 #include "grafo.h"
 #include "Nodo.h"
+#include <iostream>
 
 
 Grafo::Grafo(){
@@ -78,6 +79,39 @@ void Grafo::mostraGrafo(){
 
 
 }
+
+
+void Grafo::eliminarArista(string _origen, string _destino){
+    NodoVertice* origen = buscarVertice(_origen);
+    NodoVertice* destino = buscarVertice(_destino);
+
+    if(!destino or !origen){
+        cout << "No se encontro el vertice origen o destino" << endl;
+    }
+
+    NodoArista* auxArista = origen -> hArista;
+    NodoArista* auxAristaAnt = nullptr;
+    
+    while(auxArista){
+        if(auxArista -> destino == destino){
+
+            if(auxAristaAnt == nullptr){
+                origen -> hArista = auxArista -> sigArista;
+            }else{ 
+                auxAristaAnt -> sigArista = auxArista ->  sigArista;
+            }
+
+            delete auxArista;
+            cout<< "Arista " << origen << "-> " << destino<< "eliminado"<<endl;
+            return;
+        }
+        auxAristaAnt = auxArista;
+        auxArista = auxArista -> sigArista;
+    }
+    
+    cout<<"Arista no encontrada";
+}
+
 
 void Grafo::eliminarVertice(string id){
     NodoVertice* aux = hGrafo; 
