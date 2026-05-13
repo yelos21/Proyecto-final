@@ -107,20 +107,42 @@ void Grafo::eliminarVertice(string id){
                             tmpVertice -> hArista = auxArista -> sigArista;
                             delete auxArista;
                             auxArista = tmpVertice -> hArista;
+                        }else{
+                            auxAristaAnt -> sigArista = auxArista -> sigArista;
+                            delete auxArista; 
+                            auxArista = auxAristaAnt ->sigArista;
                         }
 
+                    }else{
+                        auxAristaAnt = auxArista;
+                        auxArista = auxArista -> sigArista;
                     }
                 }
 
             }
-
-
-
+            tmpVertice = tmpVertice -> sigVertice;
         }
 
-    }
+        NodoArista* deleteArista = aux->hArista;
+        
+        while(deleteArista){
+            NodoArista* sig = deleteArista->sigArista;
+            delete deleteArista;
+            deleteArista = sig;
+        }
 
+        if(auxant == nullptr){
+              hGrafo = aux -> sigVertice;
+            }else{
+                auxant -> sigVertice = aux ->sigVertice;
+            }
+                delete aux; 
+                cout << "Vertice eliminado" << endl;
+    }else{
+        cout << "Vertice no encontrado" << endl;
+    }
 }
+
 
 void Grafo::dijkstra(string origen, string destino){
  
