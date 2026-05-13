@@ -34,6 +34,12 @@ NodoArista::NodoArista(int peso){
     destino = nullptr;     
 }
 
+NodoArista::NodoArista(int peso, NodoArista* sigArista){
+    this -> peso = peso; 
+    this -> sigArista = sigArista; 
+    destino = nullptr;     
+}
+
 
 NodoArista::NodoArista(int peso, NodoArista* sigArista, NodoVertice* destino){
     this -> peso = peso; 

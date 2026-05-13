@@ -29,6 +29,7 @@ public:
 
     NodoArista();
     NodoArista(int);
+    NodoArista(int, NodoArista*);
     NodoArista(int, NodoArista*, NodoVertice*);
     
 };
