@@ -79,3 +79,50 @@ void Grafo::mostraGrafo(){
 
 }
 
+void Grafo::eliminarVertice(string id){
+    NodoVertice* aux = hGrafo; 
+    NodoVertice* auxant = nullptr;
+    bool band = true; 
+
+    while (aux and band){
+        if(aux -> id == id){
+            band = false; 
+        }else{
+            auxant = aux; 
+            aux = aux -> sigVertice;
+        }
+    }
+
+    if(aux){
+        NodoVertice* tmpVertice = hGrafo;
+        
+        while(tmpVertice){
+            if(tmpVertice != aux){
+                NodoArista* auxArista = tmpVertice -> hArista;
+                NodoArista* auxAristaAnt = nullptr;
+
+                while(auxArista){
+                    if(auxArista -> destino == aux){
+                        if(auxAristaAnt){
+                            tmpVertice -> hArista = auxArista -> sigArista;
+                            delete auxArista;
+                            auxArista = tmpVertice -> hArista;
+                        }
+
+                    }
+                }
+
+            }
+
+
+
+        }
+
+    }
+
+}
+
+void Grafo::dijkstra(string origen, string destino){
+ 
+    
+}
