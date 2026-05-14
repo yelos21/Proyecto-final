@@ -7,11 +7,14 @@
 class rebelde:public personaje{
 private:
     string faccion;  
-
+    bool estado;
 public:
     rebelde();
-    rebelde(string,string);
+    rebelde(string,string,bool);
     string getFaccion();
+    bool getEstado();
+    void setEstado(bool);
+    bool confianza(int desohonor);
 
 };
 
