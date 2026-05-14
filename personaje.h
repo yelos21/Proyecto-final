@@ -2,6 +2,7 @@
 #define PERSONAJE_H
 
 #include <iostream>
+#include "Nodo.h"
 #include "raylib.h"
 using namespace std;
 
@@ -9,12 +10,14 @@ using namespace std;
 class personaje{
 private:
     //aun no terminado 
-    int honor;
+    int desohonor;
     string nombre;
     int vida;
     int ataque;
     int defensa;
     int velocidad;
+    NodoVertice* ubicacion;
+
 public:
     personaje();
     personaje(string, int, int, int, int);
@@ -27,7 +30,9 @@ public:
     void setVida(int);
     void setAtaque(int);
     void setDefensa(int);
-    
+    void aumentarDeshonor(int);
+    int getDeshonor();
+
 };
 
 

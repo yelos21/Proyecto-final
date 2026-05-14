@@ -14,7 +14,11 @@ public:
     void insertarVertice(string);
     void mostraGrafo();
     void insertarArista(string,string,int);
-    NodoVertice *  buscarVertice(string);    
+    NodoVertice *buscarVertice(string);    
+    void eliminarVertice(string);
+    void eliminarArista(string, string);
+    void dijkstra(string origen, string destino);
+
 
 };
 

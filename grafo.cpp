@@ -102,7 +102,7 @@ void Grafo::eliminarArista(string _origen, string _destino){
             }
 
             delete auxArista;
-            cout<< "Arista " << origen << "-> " << destino<< "eliminado"<<endl;
+            cout<< "Arista " << _origen  << "-> " << _destino << " eliminado"<<endl;
             return;
         }
         auxAristaAnt = auxArista;
@@ -137,7 +137,7 @@ void Grafo::eliminarVertice(string id){
 
                 while(auxArista){
                     if(auxArista -> destino == aux){
-                        if(auxAristaAnt){
+                        if(auxAristaAnt == nullptr){
                             tmpVertice -> hArista = auxArista -> sigArista;
                             delete auxArista;
                             auxArista = tmpVertice -> hArista;
