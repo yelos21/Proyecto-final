@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Nodo.h"
 #include "raylib.h"
+#include <string>
 using namespace std;
 
 
