@@ -34,6 +34,6 @@ void personaje::mover(NodoVertice* destino){
     ubicacion = destino;
 }
 
-void personaje::getDeshonorNormalizado(){
+float personaje::getDeshonorNormalizado(){
     return desohonor / 100.0f;
 }
