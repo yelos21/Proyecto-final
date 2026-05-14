@@ -1,0 +1,12 @@
+# Ignorar archivos compilados y objetos
+obj/
+*.o
+*.obj
+*.exe
+
+# Ignorar archivos de configuración local del IDE
+*.layout
+*.depend
+
+# Opcional: Si no quieres que OneDrive se meta con archivos temporales de Git
+.DS_Store
