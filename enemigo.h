@@ -3,7 +3,11 @@
 
 
 
+class enemigo{
 
+
+
+};
 
 
 

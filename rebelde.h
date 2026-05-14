@@ -2,6 +2,12 @@
 #define REBELDE_H
 
 
+class rebelde{
+
+
+
+};
+
 
 
 #endif
