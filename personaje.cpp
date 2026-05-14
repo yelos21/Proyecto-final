@@ -1,31 +1,36 @@
 #include "personaje.h"
+#include "Nodo.h"
 
 personaje::personaje(){
-    nombre = "Elias";
-    vida = 0;
-    ataque = 0;
-    defensa = 0;
-    velocidad = 0;
     desohonor = 0;
+    nombre = "Elias Emmanuel";
+    ubicacion = nullptr;
 }
 
 
-personaje::personaje(string nombre, int vida, int ataque, int defensa, int velocidad){
-    this -> nombre = "ELias";
-    this -> vida = vida;
-    this -> ataque = ataque;
-    this -> defensa = defensa;
-    this -> velocidad = velocidad;
+personaje::personaje(NodoVertice* ubicacion){
+    nombre = "Elias Emmanuel";
     desohonor = 0;
+    this -> ubicacion = ubicacion; 
 }
 
-string personaje::getNombre() { return nombre; }
-int personaje::getVida() { return vida; }
-int personaje::getAtaque() { return ataque; }
-int personaje::getDefensa() { return defensa; }
-int personaje::getVelocidad() { return velocidad; }
+string personaje::getNombre(){
+    return nombre;
+}
 
-void personaje::setNombre(string _nombre) { nombre = _nombre; }
-void personaje::setVida(int _vida) { vida = _vida; }
-void personaje::setAtaque(int _ataque) { ataque = _ataque; }
-void personaje::setDefensa(int _defensa) { defensa = _defensa; }/
+int personaje::getDeshonor(){
+    return desohonor;
+}
+
+NodoVertice* personaje::getUbicacion(){
+    return ubicacion;
+}
+
+void personaje::aumentarDeshonor(int peso){
+    desohonor += peso;
+}
+
+void personaje::mover(NodoVertice* destino){
+    ubicacion = destino;
+}
+

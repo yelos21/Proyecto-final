@@ -8,30 +8,20 @@ using namespace std;
 
 
 class personaje{
-private:
-    //aun no terminado 
+protected:
     int desohonor;
     string nombre;
-    int vida;
-    int ataque;
-    int defensa;
-    int velocidad;
     NodoVertice* ubicacion;
 
 public:
     personaje();
-    personaje(string, int, int, int, int);
+    personaje(NodoVertice*);
     string getNombre();
-    int getVida();
-    int getAtaque();
-    int getDefensa();
-    int getVelocidad();    
-    void setNombre(string);
-    void setVida(int);
-    void setAtaque(int);
-    void setDefensa(int);
-    void aumentarDeshonor(int);
     int getDeshonor();
+    NodoVertice* getUbicacion();
+    void aumentarDeshonor(int);
+    void mover(NodoVertice* destino);
+    float getDeshonorNormalizado();
 
 };
 
