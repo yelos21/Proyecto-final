@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1778821900 source:c:\users\chuym\onedrive\estructuras de datos\proyecto_final 2.0\distribución de paquetería (grafo)\main.cpp
+	<iostream>
+	"Nodo.h"
+	"grafo.h"
+	"Funciones.h"
+
+1778801830 c:\users\chuym\onedrive\estructuras de datos\proyecto_final 2.0\distribución de paquetería (grafo)\include\nodo.h
+	<iostream>
+	"Sucursal.h"
+
+1778825495 c:\users\chuym\onedrive\estructuras de datos\proyecto_final 2.0\distribución de paquetería (grafo)\include\sucursal.h
+	<iostream>
+	<string.h>
+	"Nodo.h"
+
+1778821900 c:\users\chuym\onedrive\estructuras de datos\proyecto_final 2.0\distribución de paquetería (grafo)\include\grafo.h
+	"Nodo.h"
+	<map>
+	<vector>
+	<algorithm>
+
+1778801830 source:c:\users\chuym\onedrive\estructuras de datos\proyecto_final 2.0\distribución de paquetería (grafo)\src\nodo.cpp
+	"Nodo.h"
+
+1778826182 source:c:\users\chuym\onedrive\estructuras de datos\proyecto_final 2.0\distribución de paquetería (grafo)\src\sucursal.cpp
+	"Sucursal.h"
+
+1778827430 source:c:\users\chuym\onedrive\estructuras de datos\proyecto_final 2.0\distribución de paquetería (grafo)\src\grafo.cpp
+	"grafo.h"
+	"Nodo.h"
+	<iostream>
+
+1778821900 c:\users\chuym\onedrive\estructuras de datos\proyecto_final 2.0\distribución de paquetería (grafo)\include\funciones.h
+
+1778827653 source:c:\users\chuym\onedrive\estructuras de datos\proyecto_final 2.0\distribución de paquetería (grafo)\src\funciones.cpp
+	"Nodo.h"
+	"Grafo.h"
+

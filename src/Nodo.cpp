@@ -7,6 +7,14 @@ NodoVertice::NodoVertice(){
     dato = nullptr;
 }
 
+NodoVertice::NodoVertice(string id)
+{
+    this->id = id;
+    sigVertice = nullptr;
+    hArista = nullptr;
+    dato = nullptr;
+}
+
 NodoVertice::NodoVertice(string id,Sucursal*dato){
     this -> id = id;
     sigVertice = nullptr;
@@ -20,6 +28,14 @@ NodoVertice::NodoVertice(string id,NodoArista* hArista ,NodoVertice* sigVertice,
     this -> hArista = hArista;
     this -> sigVertice = sigVertice;
     this->dato = dato;
+}
+
+NodoVertice::~NodoVertice()
+{
+    if(this->dato != nullptr)
+    {
+        delete this->dato;
+    }
 }
 
 

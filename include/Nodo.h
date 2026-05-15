@@ -17,6 +17,8 @@ public:
     NodoVertice * sigVertice;
 
     NodoVertice();
+    ~NodoVertice();
+    NodoVertice(string);
     NodoVertice(string,Sucursal*);
     NodoVertice(string, NodoArista *, NodoVertice *,Sucursal*);
 

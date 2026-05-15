@@ -10,17 +10,18 @@ class NodoArista;
 
 class Sucursal
 {
- protected:
+ private:
     string nombre;
     string direccion;
-    int telefono;
+    string telefono;
     string horario;
     int mercancia;
 
      public:
         Sucursal();
         Sucursal(string nombre, string direccion);
-        Sucursal(int telefono, string horario);
+        Sucursal(string telefono, string horario,int mercancia);
+        Sucursal(string nombre,string direccion,string telefono,string horario,int mercancia);
         ~Sucursal();
 
         string get_nombre();
@@ -29,8 +30,8 @@ class Sucursal
         string get_direccion();
         void set_direccion(string);
 
-        int get_telefono();
-        void set_telefono(int);
+        string get_telefono();
+        void set_telefono(string);
 
         string get_horario();
         void set_horario(string);
@@ -39,7 +40,7 @@ class Sucursal
         void set_mercancia(int);
 
         void mostrar_datos();
-        void distribuir(NodoArista*)
+        void distribuir(NodoArista*);
 };
 
 #endif // SUCURSAL_A_H

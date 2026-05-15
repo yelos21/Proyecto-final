@@ -25,10 +25,12 @@
 				</Compiler>
 			</Target>
 		</Build>
+		<Unit filename="include/Funciones.h" />
 		<Unit filename="include/Nodo.h" />
 		<Unit filename="include/Sucursal.h" />
 		<Unit filename="include/grafo.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Funciones.cpp" />
 		<Unit filename="src/Nodo.cpp" />
 		<Unit filename="src/Sucursal.cpp" />
 		<Unit filename="src/grafo.cpp" />
