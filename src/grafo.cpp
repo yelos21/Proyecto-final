@@ -156,7 +156,6 @@ void Grafo::eliminarArista(string _origen, string _destino){
      }
 }
 
-
 void Grafo::eliminarVertice(string id){
     NodoVertice* aux = hGrafo;
     NodoVertice* auxant = nullptr;
@@ -278,12 +277,14 @@ void Grafo::dijkstra(string origen_, string destino_){
 
         }
 
-        if(distancias[destino->id] == INT_MAX){
-            cout << "No existe ruta de " << origen->id << " a " << destino->id << endl;
-            return;
-        }
-
     }
+
+
+    if(distancias[destino->id] == INT_MAX){
+        cout << "No existe ruta de " << origen->id << " a " << destino->id << endl;
+        return;
+     }
+
     vector<string> ruta;
     string paso = destino -> id;
     while(paso != ""){

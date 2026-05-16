@@ -26,14 +26,14 @@
 1778826182 source:c:\users\chuym\onedrive\estructuras de datos\proyecto_final 2.0\distribución de paquetería (grafo)\src\sucursal.cpp
 	"Sucursal.h"
 
-1778827430 source:c:\users\chuym\onedrive\estructuras de datos\proyecto_final 2.0\distribución de paquetería (grafo)\src\grafo.cpp
+1778913665 source:c:\users\chuym\onedrive\estructuras de datos\proyecto_final 2.0\distribución de paquetería (grafo)\src\grafo.cpp
 	"grafo.h"
 	"Nodo.h"
 	<iostream>
 
 1778821900 c:\users\chuym\onedrive\estructuras de datos\proyecto_final 2.0\distribución de paquetería (grafo)\include\funciones.h
 
-1778827653 source:c:\users\chuym\onedrive\estructuras de datos\proyecto_final 2.0\distribución de paquetería (grafo)\src\funciones.cpp
+1778914407 source:c:\users\chuym\onedrive\estructuras de datos\proyecto_final 2.0\distribución de paquetería (grafo)\src\funciones.cpp
 	"Nodo.h"
 	"Grafo.h"
 

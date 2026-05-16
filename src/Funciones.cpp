@@ -9,7 +9,7 @@ Grafo*crear_grafo()
     Sucursal *sucursal3 = new Sucursal("Centro","Colonia Centro","3354367404","7:00am-19:00pm",3000);
     Sucursal *sucursal4 = new Sucursal("Centro2","Calle Miguel Hidalgo","3389673432","7:00am-19:00pm",3500);
     Sucursal *sucursal5 = new Sucursal("Oeste","Colonia Chapalita","3300983234","8:00am-18:00pm",700);
-    Sucursal *sucursal6 = new Sucursal("Este","San Joaquín","3300993222","8:00am-18:00pm",1000);
+    Sucursal *sucursal6 = new Sucursal("Este","San Joaquin","3300993222","8:00am-18:00pm",1000);
     Sucursal *sucursal7 = new Sucursal("Foranea1","Tequila","3399921231","9:00am-20:00pm",900);
     Sucursal *sucursal8 = new Sucursal("Foranea2","Ciudad Guzman","3334239843","9:00am-20:00pm",800);
 
